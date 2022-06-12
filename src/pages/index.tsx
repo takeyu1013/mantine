@@ -70,9 +70,11 @@ const Home: NextPage = () => {
       <div>{`largerThanLg: ${largerThanLg}`}</div>
       <div>{`largerThanXl: ${largerThanXl}`}</div>
       <Button className="rounded-xl">Button</Button>
-      <Menu className="border" styles={{ body: { borderRadius: "0.75rem" } }}>
-        <Menu.Item style={{ fontWeight: 700 }}>設定</Menu.Item>
-        <Menu.Item color="red">ログアウト</Menu.Item>
+      <Menu className="border" classNames={{ body: "rounded-xl" }}>
+        <Menu.Item className="font-bold">設定</Menu.Item>
+        <Menu.Item className="font-bold" color="red">
+          ログアウト
+        </Menu.Item>
       </Menu>
     </div>
   );
