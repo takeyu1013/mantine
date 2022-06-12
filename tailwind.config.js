@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  important: "#__next",
   theme: {
     screens: {
       xs: "576px",
